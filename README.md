@@ -27,3 +27,26 @@ Tracking my AWS cloud practitioner study progress
 - Cloud computing drives rapid **innovation cycles**.
 - Businesses can experiment and scale fast without huge upfront investment.
 - Companies save time + money, reinvest faster, and stay competitive.
+
+## Day 4 – AWS Shared Responsibility Model
+
+## What AWS is responsible for (Security *of* the Cloud)
+- Physical data centers
+- Networking, hardware, and global infrastructure
+- Managed services (like patching the host OS, hypervisors)
+
+## What the Customer is responsible for (Security *in* the Cloud)
+- Configuring resources correctly
+- Managing data, applications, and operating systems
+- Setting up permissions (IAM users, roles, policies)
+- Encrypting data when required
+
+## Examples
+- AWS secures the physical server → I must secure my EC2 instance (OS updates, firewall rules).
+- AWS provides S3 storage → I must set correct bucket permissions (public/private).
+- AWS manages hardware security → I manage IAM users and access keys.
+
+## Key Insight
+- **Misconfigurations are the biggest risk.**  
+  Example: Companies have exposed data because they left an S3 bucket public.  
+  AWS didn’t fail — the user didn’t configure it properly.
